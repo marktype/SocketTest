@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:padding="100dp"
+    >
+
+    <RadioGroup
+        android:id="@+id/raidoGroupTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/raidoTab1"
+            style="@style/main_tab_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/raidoTab2"
+            style="@style/main_tab_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="美食" />
+
+        <RadioButton
+            android:id="@+id/raidoTab3"
+            style="@style/main_tab_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="娱乐" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/fragment_tab_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/raidoGroupTab" >
+    </FrameLayout>
+</RelativeLayout>
